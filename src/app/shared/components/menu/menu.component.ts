@@ -36,8 +36,6 @@ export class MenuComponent implements OnInit {
               routerLink: '/uncommon/'
 
             },
-
-
           ]
         },
         {
