@@ -40,4 +40,6 @@ export class UncommonPageComponent {
     this.client.shift();
   }
 
+
+
 }
