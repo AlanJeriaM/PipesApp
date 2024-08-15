@@ -18,9 +18,26 @@ export class UncommonPageComponent {
     female: 'invitarla'
   }
 
-  changeClient(){
-    this.name= 'Melissa',
-    this.gender= 'female';
-
+  changeClient() {
+    if (this.name === 'Fernando') {
+      this.name = 'Melissa';
+      this.gender = 'female';
+    } else {
+      this.name = 'Fernando';
+      this.gender = 'male';
+    }
   }
+
+ //i18n Plural
+  public client: string[] =['Maria','Pedro','Fernando','Eduardo','Melissa','Natalia'];
+  public clientsMap = {
+    '=0':'no tenemos ningún cliente esperando.',
+    '=1':'tenemos un cliente esperando',
+    'other':'tenemos # clientes esperando'
+  }
+
+  deleteClient(){
+    this.client.shift();
+  }
+
 }
