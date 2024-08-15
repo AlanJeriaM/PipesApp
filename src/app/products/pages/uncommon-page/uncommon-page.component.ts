@@ -41,5 +41,13 @@ export class UncommonPageComponent {
   }
 
 
+  //keyValuePipe
+
+  public persona = {
+    nombre: 'Alan',
+    edad: 36,
+    direccion: 'San Antonio, Chile',
+  }
+
 
 }
